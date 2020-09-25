@@ -7,9 +7,11 @@ bug-reports: "https://github.com/AbsInt/CompCert/issues"
 license: "INRIA Non-Commercial License Agreement"
 version: "3.7"
 build: [
-  ["./configure" "ia32-linux" {os = "linux"}
+  ["./configure"
+  "ia32-linux" {os = "linux"}
   "ia32-macosx" {os = "macos"}
   "ia32-cygwin" {os = "cygwin"}
+  "ia32-cygwin" {os = "win32"}
   "-bindir" "%{bin}%"
   "-libdir" "%{lib}%/compcert"
   "-install-coqdev"
