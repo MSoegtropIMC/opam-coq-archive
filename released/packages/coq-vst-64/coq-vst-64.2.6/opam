@@ -24,6 +24,7 @@ patches: [
   "makefile.patch"
 ]
 build: [
+  [make "BITSIZE=64" "depend"]
   [make "-j%{jobs}%" "BITSIZE=64"]
 ]
 install: [
